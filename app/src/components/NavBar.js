@@ -3,7 +3,7 @@ import { FaHome, FaSearch, FaCalendar } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <div className="fixed bottom-0 w-full">
+    <div className=" z-50 fixed bottom-0 w-full">
     <div className="bg-[#E9E9E9] h-[56px]">
       <div className="flex items-center justify-around pt-2 ">
           <div className="border border-black rounded-full p-2">

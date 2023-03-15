@@ -14,17 +14,18 @@ const WelcomeCom = () => {
     });
   return (
     <div>
-        <div class="relative">
-            <img src={splash} alt="splash" className="bg-cover bg-center md:bg-fixed lg:bg-auto xl:bg-contain 2xl:bg-contain h-screen w-screen" />
+        <div class="relative h-screen">
+            <img src={splash} alt="splash" className="h-full w-full object-cover" />
             <img src={logo} alt="logo" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+            <div className="sm: pl-[17%]">
             <Link to="/aktiviteter">
-                <animated.button style={spring} className="absolute bottom-0   mb-8 w-[249px] h-[54px]
-                    text-white bg-[#5E2E53] shadow-md rounded-10 hover:bg-[#6C2E63]"
+                <animated.button style={spring} className="absolute  bottom-12  w-[249px] h-[54px]
+                    text-white bg-[#5E2E53] shadow-md rounded-[10px] hover:bg-[#6C2E63]"
                         >Kom i gang
                 </animated.button>
             </Link>
+            </div>
         </div>
-        <NavBar/>
     </div>
   )
 }
