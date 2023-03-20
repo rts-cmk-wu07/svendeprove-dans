@@ -46,7 +46,7 @@ const AktiviteterCard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:4000/api/v1/activities') //calling for the  data 
+    axios.get('http://localhost:4000/api/v1/activities') //calling for the  data
       .then((response) => {
         setActivities(response.data);
       })
@@ -56,3 +56,5 @@ const AktiviteterCard = () => {
   }, []);
 
 ```
+
+Jeg har flytte min opgave fra repository til den rigtig reposotory 
