@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 
 const Detaljer = () => {
   return (
-    <div className='bg-[#5E2E53] min-h-screen'>
+    <div>
       <AktivitetsDetaljer/>
       <NavBar/>
     </div>

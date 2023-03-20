@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 
 const Aktiviteter = () => {
   return (
-    <div className='bg-[#5E2E53]'>
+    <div>
       <AktiviteterCards/>
       <NavBar/>
     </div>

@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import { useSpring, animated } from 'react-spring';
 import splash from "../assests/splash-image.jpg"
 import logo from "../assests/logo.png"
-import NavBar from '../NavBar';
 
 const WelcomeCom = () => {
     const spring = useSpring({

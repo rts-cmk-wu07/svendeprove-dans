@@ -4,6 +4,8 @@ const UseScrollAlert = (triggerHeight = 100) => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertShown, setAlertShown] = useState(false);
 
+
+  
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= triggerHeight && !alertShown) {
