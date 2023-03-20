@@ -11,37 +11,24 @@ const CalendarTeamOverview = () => {
 
   const fetchRegistrations = async () => {
     try {
-      // Fetch the token
-      const tokenResponse = await fetch('http://localhost:4000/auth/token', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: "instructor1",
-          password: "1234",
-        }),
+      const tokenResponse = await axios.post('http://localhost:4000/auth/token', {
+        username: "instructor1",
+        password: "1234",
       });
 
-      const tokenData = await tokenResponse.json();
-      const authToken = tokenData.token;
+      const authToken = tokenResponse.data.token;
 
-      // Fetch the registrations
-      const response = await fetch('http://localhost:4000/api/v1/user', {
-        method: 'GET',
+      const response = await axios.get('http://localhost:4000/api/v1/user', {
         headers: {
-          'Content-Type': 'application/json',
           'Authorization': `Bearer ${authToken}`,
         },
       });
 
-      const data = await response.json();
-      setRegistrations(data);
+      setRegistrations(response.data);
     } catch (error) {
       console.error(error);
     }
   };
-
 
   return (
     <div>

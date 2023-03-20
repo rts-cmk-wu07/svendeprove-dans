@@ -27,7 +27,7 @@ const TokenProvider = ({ children }) => {
 
       if (token && storedUser && storedUserId && storedUser !== "undefined") {
         const userObj = JSON.parse(storedUser);
-        setUser({ ...userObj, userId: storedUserId }); // Update this line
+        setUser({ ...userObj, userId: storedUserId }); 
       }
     }
   }, [isLoggedIn]);

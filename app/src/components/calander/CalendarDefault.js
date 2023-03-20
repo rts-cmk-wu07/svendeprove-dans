@@ -81,7 +81,7 @@ console.log(activities);
           ))}
         </div>
       </Slide>
-
+      
       <NavBar/>
     </div>
   );
